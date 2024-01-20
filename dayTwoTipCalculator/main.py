@@ -5,5 +5,6 @@ tip_to_percent = (tip/100)
 tip_in_dollars = price * tip_to_percent
 number_of_people = int(input("How many people to split the bill?"))
 final_amount = (price + tip_in_dollars) / number_of_people
-rounded_final_amount = "{:.2f}".format(final_amount)
+# weird python syntax to get format 
+rounded_final_amount = "{:.2f}".format(final_amount) 
 print(f"Each person should pay: ${rounded_final_amount}")
