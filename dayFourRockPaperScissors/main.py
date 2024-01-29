@@ -17,6 +17,7 @@ paper = '''
          _______)
 ---.__________)
 '''
+print(paper)
 
 scissors = '''
     _______
@@ -26,4 +27,36 @@ scissors = '''
       (____)
 ---.__(___)
 '''
-choice = input("Rock, Paper or Scissors?")
+human_choice = input("Rock, Paper or Scissors?")
+
+choices = [rock, paper, scissors]
+computerChoice = random.choices(choices)
+
+if computerChoice == rock or paper or scissors:
+    if human_choice == "paper":
+        print("YOOO")
+
+
+print(f"{computerChoice}")
+
+
+
+
+
+
+
+
+# print(("""\
+
+#                                        ._ o o
+#                                        \_`-)|_
+#                                     ,""       \ 
+#                                   ,"  ## |   ಠ ಠ. 
+#                                 ," ##   ,-\__    `.
+#                               ,"       /     `--._;)
+#                             ,"     ## /
+#                           ,"   ##    /
+
+
+#                     """))
+
